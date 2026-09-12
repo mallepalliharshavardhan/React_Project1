@@ -34,3 +34,8 @@
       }, {
         id: 25, productName: 'Casual shoes', img: 'https://th.bing.com/th?q=Suede+Dress+Shoes&w=120&h=120&c=1&rs=1&qlt=70&r=0&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247', price: 3929, rating: 4.4, category: 'Footwear'
       }];
+ 
+
+     export let players =[{
+        id:1, name:"Player One"
+      },{id:2, name:"Player Two"},{id:3, name:"Player Threo"}];

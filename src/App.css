@@ -2,6 +2,8 @@
 
 .App {
   text-align: center;
+  
+  
 }
 
 .App-logo {
@@ -21,10 +23,10 @@
   top:0;
   background-color: #657698;
   min-height: 2vh;
-  display: flex;
   font-size: 2vmin;
   color: white;
   width: 100%;
+  align-items: center;
 }
 
 .App-link {
@@ -49,9 +51,7 @@
   background-color:rgb(160, 182, 223)
 }
 
-.Nav-bar{
-  
-}
+
 
 .Nav-bar ul{
   display:flex;
@@ -91,4 +91,11 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.LoginForm{
+  background-color:lightsteelblue;
+  width:50em;
+  justify-content:center;
+  padding:15px;
+  border-radius:20px;
 }
