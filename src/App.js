@@ -67,7 +67,7 @@ const playersId = players.map((ele)=>{return <ScorePractise id={ele.id} />})
   return (
     <div className="App">
       <header className="App-header">
-        {/* <div>
+        <div>
           <h3 className="Logo">Harsha Store</h3>
           <nav className="Nav-bar">
             <ul>
@@ -89,25 +89,25 @@ const playersId = players.map((ele)=>{return <ScorePractise id={ele.id} />})
             </select>
           
 
-        </div> */}
+        </div>
       </header>
       <section className="Mobiles">
-        {/* <h3>Electronics</h3>
+        <h3>Electronics</h3>
         <div className='product-grid'>
           {molibes}
-        </div> */}
+        </div>
       </section>
       <section className="Cloths">
-        {/* <h3> Fashion</h3>
+        <h3> Fashion</h3>
         <div className="product-grid">
           {Cloths}
-        </div> */}
+        </div>
       </section>
       <section className="shoes">
-        {/* <h3> Footwear</h3>
+        <h3> Footwear</h3>
         <div className="product-grid">
           {shoes}
-        </div> */}
+        </div>
       </section>
        
        {/* <Counter/> */}
@@ -117,9 +117,9 @@ const playersId = players.map((ele)=>{return <ScorePractise id={ele.id} />})
           {/* {playersId} */}
 
           {/* <EmployeeForm/> */}
-          <div className="LoginForm">
+          {/* <div className="LoginForm">
           <LoginForm />
-           </div>
+           </div> */}
 
     </div>
   );
