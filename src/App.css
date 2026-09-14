@@ -2,6 +2,10 @@
 
 .App {
   text-align: center;
+  align-items:center;
+  justify-content:center;
+  display:flex;
+
   
   
 }
@@ -93,9 +97,25 @@
   justify-content: center;
 }
 .LoginForm{
-  background-color:lightsteelblue;
-  width:50em;
-  justify-content:center;
+   background-color:rgb(217, 233, 239);
+   min-height:50vh;
+  width:100%;
+  max-width:400px;
   padding:15px;
-  border-radius:20px;
+  border-radius:16px;
+  box-sizing: border-box;
+  box-shadow:0 8px 24px #00000014;
+  
+  
+  
 }
+.formWrap{
+  display:flex;
+  align-items:center;
+  width:100%;
+  min-height:90vh;
+  justify-content:center;
+  box-sizing:
+
+}
+

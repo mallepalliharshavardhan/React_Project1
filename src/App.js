@@ -7,9 +7,11 @@ import { clothes } from './Componets/Products';
 import { Shoes } from './Componets/Products';
 import Counter from './Componets/Counter';
 import ScorePractise from './Componets/ScorePractise';
-import {players} from './Componets/Products';
+import { players } from './Componets/Products';
 import EmployeeForm from './Componets/EmployeeForm';
-import LoginForm from './Componets/LoginForm';
+ 
+import Ecommerce from './Componets/Ecommerce';
+import LoginformI from './Componets/LoginFormI';
 
 
 function App() {
@@ -18,8 +20,8 @@ function App() {
   let [searchTerm, setSearchTerm] = useState("");  // state for filter
   let [cartCount, setCartCount] = useState(0);     // state for cart
   let [sortBy, setSortBy] = useState("price");     //state for Sort by 
-   let[sortRating,setSortRating]= useState("top")  // state for sorting by rating 
-  let[sortOrder,setSortOrder]= useState("asc");   
+  let [sortRating, setSortRating] = useState("top")  // state for sorting by rating 
+  let [sortOrder, setSortOrder] = useState("asc");
   function handleAddToCart() {
     setCartCount(cartCount + 1);  //function for increase cart count oncliking addTOCart button
   }
@@ -38,11 +40,11 @@ function App() {
     }
   }
 
-  let compareProducts= (a,b)=>{
-    if(sortBy=== "price"){
-      return compareByPrice(a,b);
-    }else{
-      return compareByRating(a,b);
+  let compareProducts = (a, b) => {
+    if (sortBy === "price") {
+      return compareByPrice(a, b);
+    } else {
+      return compareByRating(a, b);
     }
   }
   let filteredMoblies = mobile.filter((product) => product.productName.toLowerCase().includes(searchTerm.toLowerCase())).sort(compareProducts);
@@ -60,17 +62,17 @@ function App() {
     return <NewCards AddToCart={handleAddToCart} key={products.id} productName={products.productName} img={products.img} price={products.price} rating={products.rating} />;
   })
 
-const playersDetails = players.map((ele)=>{ return <ScorePractise key={ele.id} name={ele.name.toUpperCase()} /> })
+  const playersDetails = players.map((ele) => { return <ScorePractise key={ele.id} name={ele.name.toUpperCase()} /> })
 
-const playersId = players.map((ele)=>{return <ScorePractise id={ele.id} />})
+  const playersId = players.map((ele) => { return <ScorePractise id={ele.id} /> })
 
   return (
     <div className="App">
-      <header className="App-header">
-        <div>
+      {/* <header className="App-header"> */}
+        {/* <div>
           <h3 className="Logo">Harsha Store</h3>
           <nav className="Nav-bar">
-            <ul>
+            <ul>  
               <li><a href='#'> Home</a> </li>
               <li><a href='#'> About</a></li>
               <li><a href='#'> Login</a></li>
@@ -107,19 +109,25 @@ const playersId = players.map((ele)=>{return <ScorePractise id={ele.id} />})
         <h3> Footwear</h3>
         <div className="product-grid">
           {shoes}
-        </div>
-      </section>
-       
-       {/* <Counter/> */}
-       {/* <ScorePractise   />
-       <ScorePractise   /> */}
-       {/* {playersDetails} */}
-          {/* {playersId} */}
+        </div> */}
+      {/* </section> */}
 
-          {/* <EmployeeForm/> */}
-          {/* <div className="LoginForm">
+      {/* <Counter/> */}
+      {/* <ScorePractise   />
+       <ScorePractise   /> */}
+      {/* {playersDetails} */}
+      {/* {playersId} */}
+
+      {/* <EmployeeForm/> */}
+      {/* <div className="justify-center flex items-center min-h-screen w-full bg-slate-100 p-5">
+      <div className="max-w-sm w-full rounded-xl shadow-md bg-blue-100 p-8">
           <LoginForm />
-           </div> */}
+      </div>
+      </div> */}
+      
+
+      <Ecommerce />
+      <LoginformI />
 
     </div>
   );
